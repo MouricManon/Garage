@@ -37,7 +37,11 @@ public class Stationnement {
 	}
 
 	public boolean estEnCours() {
-		return (fin == null);
+            boolean estEncours = false;
+            if(fin == null){
+                estEncours = true;
+            }
+		return estEncours ;
 	}
 
 	@Override
